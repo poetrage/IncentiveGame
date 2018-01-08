@@ -1,0 +1,56 @@
+import swal from 'sweetalert'
+
+/*Write a plan 
+Add objects
+Use this keyword
+linter*/
+/*
+Prompt did you get your work done?
+if yes
+next question
+else 
+sorry no incentive
+prompt was your behavior good?
+if yes
+continue
+else
+break
+Match answer to list of scenarios
+if scenario 1 choices are
+else if scenario 2 choices are
+else Error sorry no incentive
+*/
+var scenarios = ["You got all of your work done and your behavior was exceptional", "You got all your work done even though your behavoir could have been better", "Your behavior was great but you did not get all of your work done"];
+
+prompt("How was your week?");
+
+
+alert ("Yay!! You had a great week, it is now time to reap the rewards of your hard work");
+
+var incentive = prompt("You can choose from a few catagories: Family fun, food fun, experiment fun");
+
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;}
+
+alert("You have chosen " + incentive);
+
+var getInt = getRandomInt(1,5);
+alert(getInt);
+
+if (getInt === 1){
+  alert("Java");
+}
+else if (getInt === 2){
+  alert("BluffCity");
+}
+else if (getInt === 3){
+  alert("Nerf Gun War");
+}
+else if (getInt === 4){
+  alert("Zoo");
+}
+else if (getInt === 5){
+  alert(Chipotle);
+}
+
+
